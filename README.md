@@ -29,7 +29,6 @@ pip3 install -r requirements.txt
 
 4. Start django devel server (check everything is ok)
 ```bash
-cd mysite
 python manage.py migrate
 python manage.py runserver
 ```
