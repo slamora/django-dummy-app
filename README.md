@@ -14,24 +14,20 @@ sudo apt-get install --no-install-recommends -y ${apt[@]}
 
 ```
 
-2. Install virtualenv (isolate app python related requirements)
-```bash
-sudo pip3 install virtualenv
-```
-
-3. Clone this repository
+2. Clone this repository
 ```bash
 git clone https://github.com/slamora/django-dummy-app.git django-dummy-app
 ```
 
-4. Prepare env and install requirements
+3. Prepare env and install requirements
 ```bash
 cd django-dummy-app
-virtualenv env
+python3 -m venv env
 source env/bin/activate
 pip3 install -r requirements.txt
 ```
-5. Start django devel server (check everything is ok)
+
+4. Start django devel server (check everything is ok)
 ```bash
 cd mysite
 python manage.py migrate
